@@ -1,0 +1,9 @@
+<div>
+<h2>Music Player</h2>
+<ol>
+    <li style="cursor: pointer;" *ngFor="let item of songs" (click)="openSongs(item.url)">{{item.names}}</li>
+</ol>
+<button (click)="playSong()">Play</button>
+<button (click)="pauseSong()">Pause</button>
+<button (click)="stopSong()">Stop</button>
+</div>

@@ -1,0 +1,29 @@
+<h1>This is POC of {{title}}</h1>
+<div class="container">
+    <div class="row">
+        <div class="form_bg">
+            <form #formdata="ngForm" (ngSubmit)="logForm(formdata.value)" class="common-form">
+                <fieldset ngModelGroup="name">
+                    <label>FirstName:</label>
+                    <input type="text" name="firstname" [ngModel]="firstname">
+        
+                    <label>LastName:</label>
+                    <input type="text" name="lastname" [ngModel]="lastname">
+                </fieldset>
+                <fieldset ngModelGroup="Address">
+                    <label>FirstName:</label>
+                    <input type="text" name="city" [(ngModel)]="city">
+                    <p>You entered {{city}}</p>
+        
+                    <label>LastName:</label>
+                    <input type="text" name="state" [(ngModel)]="state">
+                    <p>You entered {{state}}</p>
+                </fieldset>
+                <button type="submit">Submit</button>
+                
+            </form>
+
+        </div>
+    </div>
+
+</div>
